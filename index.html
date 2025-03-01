@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <style>
+        /* Basic CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1>Weather Dashboard</h1>
+    </header>
+
+    <div <div class="search-container">
+        <form class="search-form">
+          <input 
+            type="text" 
+            class="search-input" 
+            placeholder="Enter city name"
+            autocomplete="off"
+          >
+          <button 
+            type="submit" 
+            class="search-button"
+            disabled
+          >
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="weather-container">
+        <section class="current-weather">
+            <!-- Current weather will be displayed here -->
+        </section>
+        
+        <section class="forecast">
+            <!-- 5-day forecast will be displayed here -->
+        </section>
+    </div>
+
+    <script>
+        // JavaScript will be added here in subsequent steps
+    </script>
+</body>
+</html>
