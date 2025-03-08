@@ -20,38 +20,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="dashboard-header">
+    <header class="header">
         <h1>Weather Dashboard</h1>
-    </header>
-
-    <div <div class="search-container">
-        <form class="search-form">
-          <input 
-            type="text" 
-            class="search-input" 
-            placeholder="Enter city name"
-            autocomplete="off"
-          >
-          <button 
-            type="submit" 
-            class="search-button"
-            disabled
-          >
-            Search
-          </button>
-        </form>
-      </div>
-    </div>
-
-    <div class="weather-container">
-        <section class="current-weather">
-            <!-- Current weather will be displayed here -->
+      </header>
+      
+      <main class="main-content" role="main">
+        <section class="search-section" role="search">
+          <form id="weather-search" class="search-form">
+            <label for="location-input">Enter Location:</label>
+            <input 
+              type="text" 
+              id="location-input" 
+              class="search-input"
+              placeholder="City, Country"
+            >
+            <button 
+              type="submit" 
+              class="search-button"
+            >
+              Search
+            </button>
+          </form>
         </section>
-        
-        <section class="forecast">
-            <!-- 5-day forecast will be displayed here -->
+      
+        <section class="weather-display" role="region" aria-label="Weather Information">
+          <div class="current-weather-card">
+            <!-- Current weather data will be displayed here -->
+          </div>
+          <div class="forecast-container">
+            <!-- 5-day forecast cards will be added here -->
+          </div>
         </section>
-    </div>
+      </main>
 
     <script>
         // JavaScript will be added here in subsequent steps
